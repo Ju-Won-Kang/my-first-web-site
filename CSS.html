@@ -3,8 +3,12 @@
     <head>
         <title>WEB1 - CSS</title>
         <meta charset="UTF-8">
+        <script src="colors.js"></script>
     </head>
     <body>
+        <input type="button" value="night" onclick="
+        nightDayHandler(this)
+        ">
         <h1><a href="index.html">WEB</h1></a>
         <ol>
             <li><a href="HTML.html">HTML</li></a>
@@ -34,5 +38,20 @@
         style_tag 안에 #js{color:red;} 라고 한다면 id가 js인 모든 것에 css를 적용시킨다는 의미이다. <br>
         <span style="background-color: yellow; color:red; font-size: larger;">선택자 우선순위</span> 
         <div style="font-size: larger; font-weight: bold;"> tag < class < id </div>
+        <h2>Attribute</h2>
+        <h3>text-decoration</h3>
+        text-decoration은 선으로 텍스트를 꾸밀 수 있게 해주는 속성 이다.
+            <li>기본값 : none</li>
+            <li>상속 : No</li>
+            <li>애니메이션 : NO</li>
+            <li>버전 : CSS Level 1</li>
+        옵션 <br>
+    
+            <li>line-through : 글자 중간에 선</li>
+            <li>overline : 글자 위에 선</li>
+            <li>underline : 글자 아래에 선</li>
+            <li>initial : 기본값 설정</li>
+            <li>inherit : 부모 요소의 속성값을 상속 받는다.</li>
+        
     </body>
 </html>

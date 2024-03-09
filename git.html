@@ -2,8 +2,12 @@
 <head>
     <title>Git</title>
     <meta charset="UTF-8">
+    <script src="colors.js"></script>
 </head>
 <body>
+    <input type="button" value="night" onclick="
+    nightDayHandler(this)
+    ">
     <h1><a href="index.html">Web</a></h1>
     <ol>
         <li><a href="HTML.html">HTML</a></li>
@@ -20,7 +24,9 @@
     커밋을 하게 되면 포인터인 "HEAD"는 main(master)를 가르키게 되고 main은 최신의 커밋id를 가르킨다. <br>
     여기서 디버깅을 위해서 이전 커밋 단계로 넘어가기 위해서 <strong style="text-decoration: underline;"> git checkout [git id]</strong> 를 사용해 "head"의 위치를 변경한다 .<br>
     변경한 뒤에는 git log를 통해 최근 까지의 커밋 id가 안나오는데 이럴 때 <strong style="text-decoration: underline;">git log --all</strong>을 사용해 확인 후 git checkout [git id or main]로 다시 되돌리면 된다. <br>
-    local repository에 commit할 때 git id가 생성되고 해당 git id를 가지고 
+    local repository에 commit할 때 git id가 생성되고 해당 git id를 가지고 checkout을 수행할 수 있다. <br>
+    최신 상태로 돌리기 위해서는 <strong style="text-decoration: underline;">#git checkout main</strong> 을 통해서 Branch를 main으로 설정한다. 이것을 확인하는 방법은 git graph 혹은 sourcetree에서 main이 있는 곳에 파랑색 태두리가 있으면 main Branch로 버전을 바꾼 것이다.
+
     <h2>git log</h2>
     git log의 옵션으로는
     <li>--all : git log의 전체를 보여줘라</li>
@@ -28,6 +34,7 @@
     <li>--graph : graph로 분기 또는 연결된것을 시각적으로 보여줘라</li>
 
     <h2>HEAD & main(master)</h2>
+
     <li>HEAD : 현재의 working directory와 sStage Area가 어떤 버전이 만들어진 시점인지 가르키는 것</li>
     <li>main(master) : Branch에서 작업한 마지막 버전이 무엇인지를 가르키는 것 </li>
     <h2>Branch</h2>
