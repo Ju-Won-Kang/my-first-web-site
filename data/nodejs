@@ -1,0 +1,9 @@
+<h2>URL</h2>
+        <span style="background-color: red;">http</span>://<span style="background-color: green;">opentutorials.org</span> :<span style="background-color : blue;">3000</span>/<span style="background-color: yellow;">main</span>?<span style="background-color:purple;">id=HTML&page=12</span> <br>
+        http는 protocol : 통신규칙(사용자가 서버에 접속할때 어떤 방식으로 통신할 것인가 하는 부분 <br>
+        opentutorials.org는 host(domain) : 특정한 인터넷에 연결되어 있는 컴퓨터 주소<br>
+        3000은 port : 한대에 컴퓨터 안에서 여러 프로세스중 어떤 프로세스랑 통신할지를 지정해주는 것<br>
+        main은 path : 그 컴퓨터 안에 있는 어떤 디렉터리, 어떤 파일인지 나타낸다. <br>
+        id=HTML&page=12는 query string : "?"로 시작하고 값과 값은 "&"를 사용하고, 값의 이름과 값은 "="로 구분하기로 약속 되어 있다.  <br>
+        사용자가 입력 데이터를 전달하는 방법중 하나로 url 주소에 미리 협의된 데이터를 파라미터를 통해 넘기는 것이다. <br>
+        값을 변경하면 웹서버에 어떤 데이터를 전달할 수 있다.<br>
